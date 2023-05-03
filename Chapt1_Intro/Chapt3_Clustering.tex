@@ -1,0 +1,24 @@
+\chapter{Clustering analysis}
+% https://cran.r-project.org/web/packages/ClusterR/vignettes/the_clusterR_package.html
+% https://cran.r-project.org/web/packages/sBIC/vignettes/GaussianMixtures.pdf
+% https://towardsdatascience.com/mixture-modelling-from-scratch-in-r-5ab7bfc83eef
+% https://www.biorxiv.org/content/10.1101/2019.12.20.884551v2.full
+% https://www.r-bloggers.com/2017/02/an-intro-to-gaussian-mixture-modeling/
+% https://tinyheero.github.io/2015/10/13/mixture-model.html
+%
+Cluster analysis or clustering is the task of grouping a set of objects in such a way that objects in the same group (called a cluster) are more similar (in some sense or another) to each other than to those in other groups (clusters). It is the main task of exploratory data mining, and a common technique for statistical data analysis, used in many fields, including machine learning, pattern recognition, image analysis, information retrieval, bioinformatics, data compression, and computer graphics.
+
+The most prominent examples of clustering algorithms are Connectivity-based clustering (hierarchical clustering), Centroid-based clustering (k-means, k-medoids, ...), Distribution-based clustering (Gaussian mixture models) and Density-based clustering (DBSCAN, OPTICS, ...).
+
+The \textbf{ClusterR} package consists of centroid-based (k-means, mini-batch-kmeans, k-medoids) and distribution-based (GMM) clustering algorithms. Furthermore, the package offers functions to:
+\begin{itemize}
+    \item    validate the output using the true labels,
+    \item     plot the results using either a silhouette or a 2-dimensional plot,
+    \item     predict new observations,
+    \item     estimate the optimal number of clusters for each algorithm separately.
+\end{itemize}
+
+The Defined distance (DBSCAN) algorithm finds clusters of points that are in close proximity based on a specified search distance. The Self-adjusting (HDBSCAN) algorithm finds clusters of points similar to DBSCAN but uses varying distances, allowing for clusters with varying densities based on cluster probability (or stability). The Multi-scale (OPTICS) algorithm orders the input points based on the smallest distance to the next point. A reachability plot is then constructed, and clusters are obtained based on the fewest points to be considered a cluster, a search distance, and characteristics of the reachability plot (such as the slope and height of peaks).
+%
+\url{https://geographicdata.science/book/notebooks/10_clustering_and_regionalization.html}\\
+\url{https://www.monolithai.com/blog/machine-learning-for-turbulence-modeling}\\
