@@ -1,0 +1,1046 @@
+@article{Byun2006,
+	title        = {{Structure of three-dimensional separated flow on an axisymmetric bump}},
+	author       = {Byun, Gwibo and Simpson, Roger L.},
+	year         = 2006,
+	journal      = {AIAA Journal},
+	volume       = 44,
+	number       = 5,
+	pages        = {999--1008},
+	doi          = {10.2514/1.17002},
+	issn         = {00011452},
+	abstract     = {Fine-spatial-resolution laser Doppler velocimeter measurements were obtained on one-half of the leeside of an axisymmetric bump in a turbulent boundary layer. The ratio of bump height H and boundary-layer thickness $\delta$ is H/$\delta$ = 2. Three-dimensional separations occur on the leeside with one saddle separation on the centerline that is connected with a separation line to one focus separation on each side. Downstream of the saddle point the mean backflow converges to the focal separation points in a region confined within about 0.15$\delta$ from the local bump surface. The mean backflow zone is supplied by the intermittent large eddies as well as by the near surface flow from the side of the bump. The separated flow has a higher turbulent kinetic energy and shows bimodal histograms in local U and W, which appear to be due to highly unsteady low-frequency meandering motions. Because of the variation of the mean flow angle in the separation zones, the turbulent flow from different directions is decorrelated, resulting in lower Reynolds shearing stresses. Farther from the wall, large streamwise vortices form from flow around the sides of the bump.},
+	file         = {:home/lk/Documents/UoM/Papers/1.17002.pdf:pdf}
+}
+@article{Xiao2016,
+	title        = {{Quantifying and reducing model-form uncertainties in Reynolds-averaged Navier–Stokes simulations: A data-driven, physics-informed Bayesian approach}},
+	author       = {Xiao, H. and Wu, J. L. and Wang, J. X. and Sun, R. and Roy, C. J.},
+	year         = 2016,
+	journal      = {Journal of Computational Physics},
+	volume       = 324,
+	pages        = {115--136},
+	doi          = {10.1016/j.jcp.2016.07.038},
+	issn         = 10902716,
+	abstract     = {Despite their well-known limitations, Reynolds-Averaged Navier–Stokes (RANS) models are still the workhorse tools for turbulent flow simulations in today's engineering analysis, design and optimization. While the predictive capability of RANS models depends on many factors, for many practical flows the turbulence models are by far the largest source of uncertainty. As RANS models are used in the design and safety evaluation of many mission-critical systems such as airplanes and nuclear power plants, quantifying their model-form uncertainties has significant implications in enabling risk-informed decision-making. In this work we develop a data-driven, physics-informed Bayesian framework for quantifying model-form uncertainties in RANS simulations. Uncertainties are introduced directly to the Reynolds stresses and are represented with compact parameterization accounting for empirical prior knowledge and physical constraints (e.g., realizability, smoothness, and symmetry). An iterative ensemble Kalman method is used to assimilate the prior knowledge and observation data in a Bayesian framework, and to propagate them to posterior distributions of velocities and other Quantities of Interest (QoIs). We use two representative cases, the flow over periodic hills and the flow in a square duct, to evaluate the performance of the proposed framework. Both cases are challenging for standard RANS turbulence models. Simulation results suggest that, even with very sparse observations, the obtained posterior mean velocities and other QoIs have significantly better agreement with the benchmark data compared to the baseline results. At most locations the posterior distribution adequately captures the true model error within the developed model form uncertainty bounds. The framework is a major improvement over existing black-box, physics-neutral methods for model-form uncertainty quantification, where prior knowledge and details of the models are not exploited. This approach has potential implications in many fields in which the governing equations are well understood but the model uncertainty comes from unresolved physical processes.},
+	archiveprefix = {arXiv},
+	arxivid      = {1508.06315},
+	eprint       = {1508.06315},
+	file         = {:home/lk/Documents/UoM/Papers/1508.06315.pdf:pdf},
+	keywords     = {Ensemble Kalman filtering,Reynolds-Averaged Navier–Stokes equations,Turbulence modeling,Uncertainty quantification}
+}
+@article{Wang,
+	title        = {{A Physics Informed Machine Learning Approach for Reconstructing Reynolds Stress Modeling Discrepancies Based on DNS Data}},
+	author       = {Wang, Jian-xun and Wu, Jin-long and Xiao, Heng},
+	pages        = {1--36},
+	archiveprefix = {arXiv},
+	arxivid      = {arXiv:1606.07987v2},
+	eprint       = {arXiv:1606.07987v2},
+	file         = {:home/lk/Documents/UoM/Papers/1606.07987.pdf:pdf},
+	keywords     = {boussinesq assumption,data-driven modeling,equations,machine learning,model-form uncertainty,reynolds-averaged navier,stokes,turbulence modeling}
+}
+@article{Medida,
+	title        = {{Machine Learning-augmented Predictive Modeling of Turbulent Separated Flows over Airfoils}},
+	author       = {Medida, Shivaji},
+	pages        = {1--32},
+	archiveprefix = {arXiv},
+	arxivid      = {arXiv:1608.03990v3},
+	eprint       = {arXiv:1608.03990v3},
+	file         = {:home/lk/Documents/UoM/Papers/1608.03990.pdf:pdf}
+}
+@article{Wu2018,
+	title        = {{Physics-informed machine learning approach for augmenting turbulence models: A comprehensive framework}},
+	author       = {Wu, Jin Long and Xiao, Heng and Paterson, Eric},
+	year         = 2018,
+	journal      = {Physical Review Fluids},
+	volume       = 7,
+	number       = 3,
+	pages        = {1--42},
+	doi          = {10.1103/PhysRevFluids.3.074602},
+	issn         = {2469990X},
+	abstract     = {Reynolds-averaged Navier-Stokes (RANS) equations are widely used in engineering turbulent flow simulations. However, RANS predictions may have large discrepancies due to the uncertainties in modeled Reynolds stresses. Recently, Wang et al. demonstrated that machine learning can be used to improve the RANS modeled Reynolds stresses by leveraging data from high-fidelity simulations [J.-X. Wang, Phys. Rev. Fluids 2, 034603 (2017)2469-990X10.1103/PhysRevFluids.2.034603]. However, solving for mean flows from the improved Reynolds stresses still poses significant challenges due to potential ill-conditioning of RANS equations with Reynolds stress closures. Enabling improved predictions of mean velocities is of profound practical importance, because often the velocity and its derived quantities (quantities of interest, e.g., drag, lift, and surface friction), and not the Reynolds stress itself, are of ultimate interest in RANS simulations. To this end, we present a comprehensive framework for augmenting turbulence models with physics-informed machine learning, illustrating a complete workflow from identification of input features to final prediction of mean velocities. This work has two innovations. First, we demonstrate a systematic procedure to generate mean flow features based on the integrity basis for mean flow tensors. Second, we propose using machine learning to predict linear and nonlinear parts of the Reynolds stress tensor separately. Inspired by the finite polynomial representation of tensors in classical turbulence modeling, such a decomposition is instrumental in overcoming the ill-conditioning of RANS equations. Numerical tests demonstrate the merits of the proposed framework.},
+	archiveprefix = {arXiv},
+	arxivid      = {1801.02762},
+	eprint       = {1801.02762},
+	file         = {:home/lk/Documents/UoM/Papers/1801.02762.pdf:pdf},
+	keywords     = {07102,1,1701,and in an arxiv,ctr summer,disclosure,have been presented in,however,integrity basis,machine learning,no parts of this,paper have been,parts of this manuscript,preprint arxiv,program 2016,random forest,rans equations,reynolds stress,the proceedings of the,turbulence modeling}
+}
+@article{yin2020feature,
+  title={Feature selection and processing of turbulence modeling based on an artificial neural network},
+  author={Yin, Yuhui and Yang, Pu and Zhang, Yufei and Chen, Haixin and Fu, Song},
+  journal={Physics of Fluids},
+  volume={32},
+  number={10},
+  pages={105117},
+  year={2020},
+  publisher={AIP Publishing LLC}
+}
+@article{Yan,
+	title        = {{Data augmented turbulence modeling for three-dimensional separation flows}},
+	author       = {Yan, Chongyang and Zhang, Yufei and Chen, Haixin},
+	pages        = {1--54},
+	file         = {:home/lk/Documents/UoM/Papers/2022Arxiv_Data augmented turbulence modeling for 3D separated flows.pdf:pdf}
+}
+@article{Zhang2022,
+	title        = {{Ensemble-based learning of turbulence model from indirect observation data}},
+	author       = {Zhang, Xin-Lei and Xiao, Heng and Luo, Xiaodong and He, Guowei},
+	year         = 2022,
+	number       = {Pope 2000},
+	url          = {http://arxiv.org/abs/2202.05122},
+	abstract     = {In this work, we propose using an ensemble Kalman method to learn a nonlinear eddy viscosity model, represented as a tensor basis neural network, from velocity data. Data-driven turbulence models have emerged as a promising alternative to traditional models for providing closure mapping from the mean velocities to Reynolds stresses. Most data-driven models in this category need full-field Reynolds stress data for training, which not only places stringent demand on the data generation but also makes the trained model ill-conditioned and lacks robustness. This difficulty can be alleviated by incorporating the Reynolds-averaged Navier-Stokes (RANS) solver in the training process. However, this would necessitate developing adjoint solvers of the RANS model, which can be challenging. Given such difficulty, we present an ensemble Kalman method with adaptive step size to train a neural network-based turbulence model by using indirect observation data. To our knowledge, this is the first such attempt in turbulence modelling. The ensemble method is first verified on the flow in a square duct, where it correctly learns the underlying turbulence models from velocity data. Then, the generalizability of the learned model is evaluated on a family of separated flows over periodic hills. It is demonstrated that the turbulence model learned in one flow can predict similar flows in different geometries.},
+	archiveprefix = {arXiv},
+	arxivid      = {2202.05122},
+	eprint       = {2202.05122},
+	file         = {:home/lk/Documents/UoM/Papers/2202.05122.pdf:pdf}
+}
+@article{Tan2021,
+	title        = {{Towards Explainable Machine-Learning-Assisted Turbulence Modeling for Transonic Flows}},
+	author       = {Tan, Jianheng and He, Xiao and Rigas, Georgios and Vahdati, Mehdi},
+	year         = 2021,
+	number       = {Ml},
+	pages        = {1--12},
+	abstract     = {A machine-learning-assisted turbulence modeling framework is proposed to improve the prediction accuracy of the Spalart-Allmaras turbulence model. The case studied is the transonic bump flow, which partially resembles the flow physics of a transonic compressor. A random forest model is trained, cross-validated and tested to construct a mapping between the input features and the eddy viscosity discrepancy. These input features concern the physical effects of pressure gradient, strain versus vorticity, flow misalignment, wall proximity and viscosity ratio. Results show that the proposed approach predicts an interpolation and an extrapolation test case with L1-type errors of 11.1% and 16.5%, respectively. The Shapley additive explanations method is employed to investigate the global and local sensitivities of each input feature. The capability of these input features in identifying specific flow features is discussed. The methods and results of this work provide useful guidance for turbulence model developers.},
+	file         = {:home/lk/Documents/UoM/Papers/490-1465-1-DR.pdf:pdf},
+	keywords     = {machine learning,shap,turbulence modeling}
+}
+@article{Lav2022,
+	title        = {{CFD-driven machine-learning using sparse experimental data of smooth-wall turbulent boundary layers under pressure gradients}},
+	author       = {Lav, Chitrarth and Sandberg, Richard D},
+	year         = 2022,
+	number       = 2018,
+	isbn         = 6183446734,
+	file         = {:home/lk/Documents/UoM/Papers/4_OPC.pdf:pdf}
+}
+@article{Yin2020,
+	title        = {{Feature selection and processing of turbulence modeling based on an artificial neural network}},
+	author       = {Yin, Yuhui and Yang, Pu and Zhang, Yufei and Chen, Haixin and Fu, Song},
+	year         = 2020,
+	journal      = {Physics of Fluids},
+	publisher    = {AIP Publishing, LLC},
+	volume       = 32,
+	number       = 10,
+	doi          = {10.1063/5.0022561},
+	issn         = 10897666,
+	url          = {https://doi.org/10.1063/5.0022561},
+	abstract     = {Data-driven turbulence modeling has been considered an effective method for improving the prediction accuracy of Reynolds-averaged Navier-Stokes equations. Related studies aimed to solve the discrepancy of traditional turbulence modeling by acquiring specific patterns from high-fidelity data through machine learning methods, such as artificial neural networks. The present study focuses on the unsmoothness and prediction error problems from the aspect of feature selection and processing. The selection criteria for the input features are summarized, and an effective input set is constructed. The effect of the computation grid on the smoothness is studied. A modified feature decomposition method for the spatial orientation feature of the Reynolds stress is proposed. The improved machine learning framework is then applied to the periodic hill database with notably varying geometries. The results of the modified method show significant enhancement in the prediction accuracy and smoothness, including the shape and size of separation areas and the friction and pressure distributions on the wall, which confirms the validity of the approach.},
+	file         = {:home/lk/Documents/UoM/Papers/5.0022561.pdf:pdf}
+}
+@article{Duraisamy2015,
+	title        = {{New approaches in turbulence and transition modeling using data-driven techniques}},
+	author       = {Duraisamy, Karthik and Zhang, Ze Jia and Singh, Anand Pratap},
+	year         = 2015,
+	journal      = {53rd AIAA Aerospace Sciences Meeting},
+	number       = {January},
+	pages        = {1--14},
+	doi          = {10.2514/6.2015-1284},
+	isbn         = 9781624103438,
+	abstract     = {A data-driven approach to the modeling of turbulent and transitional flows is proposed in this work, with the goal of developing more robust and accurate closure models. The key idea is to (i) infer the functional form of deficiencies in known closure models by applying inverse problems to computational and experimental data, (ii) use machine learning to reconstruct the improved functional forms, and (iii) to inject the improved functional forms in simulations to obtain more accurate predictions. The inverse modeling step, on its own, can yield valuable insight to the modeler, essentially converting data to information. The machine learning step is a tool to convert information into modeling knowledge. Representative examples are used to describe the methodology and to demonstrate its viability. The first example investigates the modeling of a non-equilibrium turbulent boundary layer, and the second involves the modeling of bypass transition to turbulence. Evidence from these problems emphasizes the utility of the proposed approach in offering new routes to closure modeling in general computational physics disciplines.},
+	file         = {:home/lk/Documents/UoM/Papers/6.2015-1284.pdf:pdf}
+}
+@article{Delen2017,
+	title        = {{Computational Investigation of Self Propulsion Performance of Darpa Suboff Vehicle}},
+	author       = {Delen, Cihad and Sezen, Savas and Bal, Sakir},
+	year         = 2017,
+	journal      = {Tamap Journal of Engineering},
+	volume       = 2017,
+	number       = 4,
+	abstract     = {In this paper, the resistance and power values which are very important for the hydrodynamic performance of an underwater vehicle (DARPA SUBOFF) have been calculated using both an empirical method and Computational Fluid Dynamics (CFD) analysis. The self- propulsion of the vehicle has been investigated using Actuator Disc Theory (ADT). The open water hydrodynamic characteristics of DTMB 4119 propeller that is selected for CFD validation has been merged into ADT. In CFD analyses, the flow around DARPA SUBOFF has been solved using Reynolds Averaged Navier-Stokes (RANS) equations by finite volume method (FVM). During all analyses, the flow has been considered as 3-D, turbulent, incompressible and steady. The numerical results have been compared with the experiments. The self- propulsion performance of DARPA SUBOFF has been computed for two different velocities.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/0-31032017153325.pdf:pdf}
+}
+@article{Devenport2022,
+	title        = {{Equilibrium and non-equilibrium turbulent boundary layers}},
+	author       = {Devenport, William J. and Lowe, K. Todd},
+	year         = 2022,
+	journal      = {Progress in Aerospace Sciences},
+	publisher    = {Elsevier Ltd},
+	volume       = 131,
+	number       = {February},
+	pages        = 100807,
+	doi          = {10.1016/j.paerosci.2022.100807},
+	issn         = {03760421},
+	url          = {https://doi.org/10.1016/j.paerosci.2022.100807},
+	abstract     = {This article presents a review of historical and recent developments in the understanding of equilibrium and non-equilibrium turbulent boundary layers at incompressible high-Reynolds number conditions. The most fundamental equations and concepts are first introduced to provide a basis and context for the material reviewed. The review focusses on findings concerning the mean flow and turbulence stress fields, as well as on major elements of the instantaneous structure. Zero pressure gradient smooth wall and rough wall boundary layers are described, forming the basis of following material on equilibrium boundary layers formed in favorable and adverse pressure gradients. Non-equilibrium two dimensional flows formed in pressure gradient, with and without roughness, and as a result of step changes in roughness are covered. A detailed discussion of the physics and mathematics unique to the development of boundary layers in skewed, three-dimensional flows over smooth walls concludes the review.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/1-s2.0-S0376042122000033-main.pdf:pdf},
+	keywords     = {Boundary layer,Turbulence,Incompressible,High Reynolds number,Equilibrium,Non-equilibrium}
+}
+@article{Marusic2010,
+	title        = {{Wall-bounded turbulent flows at high Reynolds numbers: Recent advances and key issues}},
+	author       = {Marusic, I. and McKeon, B. J. and Monkewitz, P. A. and Nagib, H. M. and Smits, A. J. and Sreenivasan, K. R.},
+	year         = 2010,
+	journal      = {Physics of Fluids},
+	volume       = 22,
+	number       = 6,
+	pages        = {1--24},
+	doi          = {10.1063/1.3453711},
+	issn         = 10706631,
+	abstract     = {Wall-bounded turbulent flows at high Reynolds numbers have become an increasingly active area of research in recent years. Many challenges remain in theory, scaling, physical understanding, experimental techniques, and numerical simulations. In this paper we distill the salient advances of recent origin, particularly those that challenge textbook orthodoxy. Some of the outstanding questions, such as the extent of the logarithmic overlap layer, the universality or otherwise of the principal model parameters such as the von K{\'{a}}rm{\'{a}}n "constant," the parametrization of roughness effects, and the scaling of mean flow and Reynolds stresses, are highlighted. Research avenues that may provide answers to these questions, notably the improvement of measuring techniques and the construction of new facilities, are identified. We also highlight aspects where differences of opinion persist, with the expectation that this discussion might mark the beginning of their resolution. {\textcopyright} 2010 American Institute of Physics.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/1.3453711.pdf:pdf}
+}
+@article{Uzun2018,
+	title        = {{Large-eddy simulation of flow over a wall-mounted hump with separation and reattachment}},
+	author       = {Uzun, Ali and Malik, Mujeeb R.},
+	year         = 2018,
+	journal      = {AIAA Journal},
+	volume       = 56,
+	number       = 2,
+	pages        = {715--730},
+	doi          = {10.2514/1.J056397},
+	issn         = {00011452},
+	abstract     = {Wall-resolved large-eddy simulation of a model turbulent flow involving favorable and adverse pressure gradients, imposed by surface curvature of a wall-mounted hump, is performed for a spanwise-periodic computational domain. The flow acceleration over the front portion of the hump is strong enough to exceed the relaminarization criterion of Narasimha and Sreenivasan ("Relaminarization in Highly Accelerated Turbulent Boundary Layers," Journal of Fluid Mechanics, Vol. 61, No. 3, 1973, pp. 417-447) but only over a relatively short streamwise extent. Although the flow does not relaminarize, turbulent skin-friction variation exhibits a plateau, also observed in the experiment of Greenblatt et al. ("A Separation Control CFD Validation Test Case, Part 1: Baseline and Steady Suction," AIAA Journal, Vol. 44, No. 12, 2006, pp. 2820-2830), before it again continues to rise. The subsequent adverse pressure gradient is strong enough to cause flow separation. The location and extent of flow separation, including skin-friction distributions, compare reasonably well with experimental data. Computed velocity and Reynolds stress profiles are also compared with the experimental results.Asystematic study of the effect of computational domain span, subgridscale model, tunnel backpressure, incoming boundary layer, grid refinement, Mach number, and top tunnel wall contour (which models the blockage effect of the experimental setup) is carried out, and sensitivity of the results to these parameters is discussed.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/1.j056397.pdf:pdf}
+}
+@article{Duran2019,
+	title        = {{Non-equilibrium three-dimensional boundary layers at moderate Reynolds numbers}},
+	author       = {Duran, Adrian Lozano and Giometto, Marco G. and Park, George Ilhwan and Moin, Parviz},
+	year         = 2019,
+	journal      = {Journal of Fluid Mechanics},
+	volume       = 883,
+	pages        = {1--38},
+	doi          = {10.1017/jfm.2019.869},
+	issn         = 14697645,
+	abstract     = {Non-equilibrium wall turbulence with mean-flow three-dimensionality is ubiquitous in geophysical and engineering flows. Under these conditions, turbulence may experience a counter-intuitive depletion of the turbulent stresses, which has important implications for modelling and control. Yet, current turbulence theories have been established mainly for statistically two-dimensional equilibrium flows and are unable to predict the reduction in the Reynolds stress magnitude. In the present work, we propose a multiscale model that captures the response of non-equilibrium wall-bounded turbulence under the imposition of three-dimensional strain. The analysis is performed via direct numerical simulation of transient three-dimensional turbulent channels subjected to a sudden lateral pressure gradient at friction Reynolds numbers up to 1000. We show that the flow regimes and scaling properties of the Reynolds stress are consistent with a model comprising momentum-carrying eddies with sizes and time scales proportional to their distance to the wall. We further demonstrate that the reduction in Reynolds stress follows a spatially and temporally self-similar evolution caused by the relative horizontal displacement between the core of the momentum-carrying eddies and the flow layer underneath. Inspection of the flow energetics reveals that this mechanism is associated with lower levels of pressure-strain correlation, which ultimately inhibits the generation of Reynolds stress, consistent with previous works. Finally, we assess the ability of the state-of-The-Art wall-modelled large-eddy simulation to predict non-equilibrium three-dimensional flows.},
+	archiveprefix = {arXiv},
+	arxivid      = {1904.11079},
+	eprint       = {1904.11079},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/1904.11079.pdf:pdf},
+	keywords     = {turbulence simulation,turbulence theory,turbulent boundary layers}
+}
+@article{Volpi2015,
+	title        = {{Development and validation of a dynamic metamodel based on stochastic radial basis functions and uncertainty quantification}},
+	author       = {Volpi, Silvia and Diez, Matteo and Gaul, Nicholas J. and Song, Hyeongjin and Iemma, Umberto and Choi, K. K. and Campana, Emilio F. and Stern, Frederick},
+	year         = 2015,
+	journal      = {Structural and Multidisciplinary Optimization},
+	volume       = 51,
+	number       = 2,
+	pages        = {347--368},
+	doi          = {10.1007/s00158-014-1128-5},
+	isbn         = {0015801411},
+	issn         = 16151488,
+	abstract     = {A dynamic radial basis function (DRBF) metamodel is derived and validated, based on stochastic RBF and uncertainty quantification (UQ). A metric for assessing metamodel efficiency is developed and used. The validation includes comparisons with a dynamic implementation of Kriging (DKG) and static metamodels for both deterministic test functions (with dimensionality ranging from two to six) and industrial UQ problems with analytical and numerical benchmarks, respectively. DRBF extends standard RBF using stochastic kernel functions defined by an uncertain tuning parameter whose distribution is arbitrary and whose effects on the prediction are determined using UQ methods. Auto-tuning based on curvature, adaptive sampling based on prediction uncertainty, parallel infill, and multiple response criteria are used. Industrial problems are two UQ applications in ship hydrodynamics using high-fidelity computational fluid dynamics for the high-speed Delft catamaran with stochastic operating and environmental conditions: (1) calm water resistance, sinkage and trim with variable Froude number; and (2) mean value and root mean square of resistance and heave and pitch motions with variable regular head wave. The number of high-fidelity evaluations required to achieve prescribed error levels is considered as the efficiency metric, focusing on fitting accuracy and UQ variables. DKG is found more efficient for fitting low-dimensional test functions and one-dimensional UQ, whereas DRBF has a greater efficiency for fitting higher-dimensional test functions and two-dimensional UQ.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/2015-SMO-Volpi_etal.pdf:pdf},
+	keywords     = {Dynamic metamodels,Kriging,Radial basis function networks,Simulation-based design,Uncertainty quantification}
+}
+@article{Smits2021,
+	title        = {{Reynolds stress scaling in the near-wall region of wall-bounded flows}},
+	author       = {Smits, Alexander J. and Hultmark, Marcus and Lee, Myoungkyu and Pirozzoli, Sergio and Wu, Xiaohua},
+	year         = 2021,
+	journal      = {Journal of Fluid Mechanics},
+	volume       = 926,
+	doi          = {10.1017/jfm.2021.736},
+	issn         = 14697645,
+	abstract     = {A new scaling is derived that yields a Reynolds-number-independent profile for all components of the Reynolds stress in the near-wall region of wall-bounded flows, including channel, pipe and boundary layer flows. The scaling demonstrates the important role played by the wall shear stress fluctuations and how the large eddies determine the Reynolds number dependence of the near-wall turbulence behaviour.},
+	archiveprefix = {arXiv},
+	arxivid      = {2106.05053},
+	eprint       = {2106.05053},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/2106.05053.pdf:pdf},
+	keywords     = {boundary layer structure,pipe flow boundary layer,turbulent boundary layers}
+}
+@article{Fritsch2022,
+	title        = {{Experimental and Computational Study of 2D Smooth Wall Turbulent Boundary Layers in Pressure Gradient}},
+	author       = {Fritsch, Daniel J. and Vishwanathan, Vidya and Roy, Christopher J. and Lowe, K. Todd and Devenport, William J. and Nishi, Yasunari and Knopp, Tobias and Str{\"{o}}er, Philip and Krumbein, Andreas and Sandberg, Richard D. and Lav, Chitrarth and Bensow, Rickard E. and E{\c{c}}a, Lu{\'{i}}s and Toxopeus, Serge L. and Kerkvliet, Maarten and Slama, Myriam and Bordier, Luc},
+	year         = 2022,
+	journal      = {AIAA Science and Technology Forum and Exposition, AIAA SciTech Forum 2022},
+	pages        = {1--35},
+	doi          = {10.2514/6.2022-0696},
+	isbn         = 9781624106316,
+	abstract     = {This paper describes a collaborative experimental and computational study of smooth wall boundary layers in a systematic family of favorable and adverse pressure gradients. The objective is to advance turbulence modeling of these flows, in particular the effects of pressure gradients that can be classified as non-equilibrium. This collaboration is a component of the larger NATO AVT-349 Research Task Group. Experiments under this effort are conducted at Virginia Tech and computational efforts are presented from Virginia Tech, the German Aerospace Center (DLR), the University of Melbourne, Chalmers University of Technology, the Maritime Research Institute Netherlands (MARIN) in conjunction with the University of Lisbon Instituto Superior T{\'{e}}cnico (IST) (MARIN/IST), and the Sirehna Naval Group. This paper describes some of the key elements of the experimental and computational approaches, the efforts made for cross-discipline collaboration, verification, and validation, and reports on some initial results and findings. The agreement between various RANS solutions and RANS turbulence models and between RANS solutions and experiment are generally good, but questions remain as to the efficacy of RANS modeling for non-equilibrium boundary layer flows and some potential directions for future investigations are suggested.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/6.2022-0696_2D_Smooth_wall.pdf:pdf}
+}
+@article{Garcia-Mayoral2022,
+	title        = {{Modeling of high-Re, incompressible, non-equilibrium, rough-wall boundary layers for naval applications under NATO-AVT349}},
+	author       = {Garc{\'{i}}a-Mayoral, Ricardo and Durbin, Paul and McKeon, Beverley and Piomelli, Ugo and Sandberg, Richard D. and Chung, Daniel and Hutchins, Nicholas and Bensow, Rickard E. and Knopp, Tobias and Krumbein, Andreas and Roy, Christopher J. and Gargiulo, Aldo and Lowe, K. Todd and Toxopeus, Serge},
+	year         = 2022,
+	journal      = {AIAA Science and Technology Forum and Exposition, AIAA SciTech Forum 2022},
+	pages        = {1--12},
+	doi          = {10.2514/6.2022-1033},
+	isbn         = 9781624106316,
+	abstract     = {This paper discusses the modeling activity of the NATO-STO Research Task Group AVT-349. The aim of this group is to improve the understanding and modeling of boundary layers in the complex flow around water vehicles. As such, the focus is on incompressible, high-Reynolds-number flows that can be subject to non-equilibrium conditions such as strong pressure gradients, three-dimensionality, and surface roughness and heterogeneity. The Task Group has identified a reduced number of simpler problems in which the above conditions can be studied separately and in controlled environments. These include two-dimensional rough-wall boundary layers under both zero and non-zero pressure gradients, two-dimensional smooth-wall boundary layers subject to pressure gradients, and boundary layers around smooth bodies of revolution and three-dimensional obstacles. An experimental and computational data set is being assembled for further analysis and insight into the flow mechanisms involved, as well as the shortcomings of state-of-the-art models. This paper gives an outlook of the modeling effort within the Task Group, as well its different objectives. These include predicting the effect of roughness in equilibrium conditions; assessing the applicability and/or extension of equilibrium models and predictions to non-equilibrium conditions, in particular when outer-layer similarity is lost; the development of near-wall models based on a reduced-order resolvent framework; and the use of machine-aided methods in closure models.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/6.2022-1033_AVT349_modeling.pdf:pdf}
+}
+@article{Gargiulo2022,
+	title        = {{Computations of the BeVERLI Hill three-dimensional separating flow model validation cases}},
+	author       = {Gargiulo, A. and Ozoroski, T. A. and Hallock, T. and Haghiri, A. and Sandberg, R. D. and Visonneau, M. and Deng, G. and Guilmineau, E. and Geneau, D. and Jeans, T. and Bettle, M. and Kerkvliet, M. and Toxopeus, S. L. and Duetsch-Patel, J. E. and Sundarraj, V. and Borgoltz, A. and Devenport, W. J. and Roy, C. J. and Lowe, K. T.},
+	year         = 2022,
+	journal      = {AIAA Science and Technology Forum and Exposition, AIAA SciTech Forum 2022},
+	pages        = {1--33},
+	doi          = {10.2514/6.2022-1034},
+	isbn         = 9781624106316,
+	abstract     = {The BeVERLI (Benchmark Validation Experiment for RANS/LES Investigations) Hill project aims at producing a detailed experimental database of three-dimensional non-equilibrium turbulent boundary layers with various levels of separation while meeting the most exacting requirements of computational fluid dynamics validation as per Oberkampf and Smith [1]. A group of the Science and Technology Organization (STO) of the North Atlantic Treaty Organization (NATO) entitled NATO AVT-349-"Non-Equilibrium Turbulent Boundary Layers in High Reynolds Number Flow at Incompressible Conditions" has recently considered the BeVERLI Hill case. Their goal is to advance the accuracy and range of prediction models for high Reynolds number non-equilibrium boundary layers. This highly collaborative and international group comprised of various academic, governmental, and industrial institutions has performed several Reynolds-averaged Navier-Stokes (RANS) simulations of the BeVERLI Hill using different grids, solvers, and turbulence models. The resulting solutions and available experimental data are presented in this paper to summarize and highlight key features, sensitivities, and the current predictive capability of RANS for the BeVERLI Hill case. The results suggest important sensitivities to Reynolds number, grid density, iterative converge, solver, and turbulence models. The RANS predictions are seen to be consistent for the fully attached flow on the windward portion of the BeVERLI Hill. Complex non-equilibrium flow physics pertinent to the BeVERLI Hill case, such as rapid changes in the sign of the pressure gradient over the hill top, three-dimensional curvature, and flow separation on the leeward side of the hill lead to notable scatter in the CFD results and discrepancies relative to the experiment.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/6.2022-1034_BeverLi.pdf:pdf}
+}
+@article{Covert1984,
+	title        = {{Unsteady turbulent boundary layers in adverse pressure gradients}},
+	author       = {Covert, Eugene E. and Lorber, Peter F.},
+	year         = 1984,
+	journal      = {AIAA Journal},
+	volume       = 22,
+	number       = 1,
+	pages        = {22--28},
+	doi          = {10.2514/3.8334},
+	issn         = {00011452},
+	abstract     = {Several characteristics of an unsteady turbulent boundary layer have been measured on the after part of the upper surface of a NACA 0012 airfoil. Data were taken at a chord Reynolds number of 700,000, at geometric angles of attack of 0 and 10 deg, and over a range of reduced frequencies (based upon the semichord) of 0.5-6.4. Mean and unsteady velocity and Reynolds stress profiles are presented, as is the nonlinear coupling from the unsteady motion into the steady motion. Data are presented showing that for this experiment the periodic unsteady turbulent velocity profile becomes independent of the mean adverse pressure gradient at higher reduced frequencies. {\textcopyright} 1982 American Institute of Aeronautics and Astronautics, Inc.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/8.2938.pdf:pdf}
+}
+@book{Azaiez2019,
+	title        = {{Low Rank Approximation of Multidimensional Data In: Pirozzoli S., Sengupta T. (eds) High-Performance Computing of Big Data for Turbulence and Combustion.}},
+	author       = {Aza{\"{i}}ez, Mejdi and Lestandi, Lucas and Rebollo, Tom{\'{a}}s Chac{\'{o}}n},
+	year         = 2019,
+	publisher    = {Springer International Publishing},
+	volume       = 592,
+	doi          = {10.1007/978-3-030-17012-7},
+	isbn         = {978-3-030-17011-0},
+	url          = {http://link.springer.com/10.1007/978-3-030-17012-7},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/978-3-030-17012-7_3.pdf:pdf},
+	keywords     = {Data,Data reduction,HOSVD,Low rank approximation,MOR,Model Reduction,POD,Singular Values Decomposition,Tensor train,tensors}
+}
+@article{Cho2020,
+	title        = {{Maneuvering simulation of an X-plane submarine using computational fluid dynamics}},
+	author       = {Cho, Yong Jae and Seok, Woochan and Cheon, Ki Hyeon and Rhee, Shin Hyung},
+	year         = 2020,
+	journal      = {International Journal of Naval Architecture and Ocean Engineering},
+	publisher    = {Elsevier Ltd},
+	volume       = 12,
+	pages        = {843--855},
+	doi          = {10.1016/j.ijnaoe.2020.10.001},
+	issn         = 20926790,
+	url          = {https://doi.org/10.1016/j.ijnaoe.2020.10.001},
+	abstract     = {X-plane submarines show better maneuverability as they have much longer span of control plane than that of cross plane submarines. In this study, captive model tests were conducted to evaluate the maneuverability of an X-plane submarine using Computational Fluid Dynamics (CFD) and a mathematical maneuvering model. For CFD analysis, SNUFOAM, CFD software specialized in naval hydrodynamics based on the open-source toolkit, OpenFOAM, was applied. A generic submarine Joubert BB2 was selected as a test model, which was modified by Maritime Research Institute Netherlands (MARIN). Captive model tests including propeller open water, resistance, self-propulsion, static drift, horizontal planar motion mechanism and vertical planar motion mechanism tests were carried out to obtain maneuvering coefficients of the submarine. Maneuvering simulations for turning circle tests were performed using the maneuvering coefficients obtained from the captive model tests. The simulated trajectory showed good agreement with that of free running model tests. From the results, it was proved that CFD simulations can be applicable to obtain reliable maneuvering coefficients for X-plane submarines.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/CNR-INSEAN/1-s2.0-S2092678220300443-main.pdf:pdf},
+	keywords     = {Captive model tests,Computational fluid dynamics,Maneuvering simulations,Planar motion mechanism,X-plane submarine}
+}
+@article{Zaghi2016,
+	title        = {{Hydrodynamic Characterization of USV Vessels with Innovative SWATH Configuration for Coastal Monitoring and Low Environmental Impact}},
+	author       = {Zaghi, Stefano and Dubbioso, Giulio and Broglia, Riccardo and Muscari, Roberto},
+	year         = 2016,
+	journal      = {Transportation Research Procedia},
+	publisher    = {Elsevier B.V.},
+	volume       = 14,
+	pages        = {1562--1570},
+	doi          = {10.1016/j.trpro.2016.05.121},
+	issn         = 23521465,
+	url          = {http://dx.doi.org/10.1016/j.trpro.2016.05.121},
+	abstract     = {The high costs associated with the use of research oceanographic vessels and the maturity of the unmanned surface vehicles (USV) makes now possible to develop systems for monitoring coastal areas based on networks of independent USVs. This type of vessels is a valid alternative to conventional vessels, which have a limited mission profile due to their high environmental impact (conventional propulsion systems based on polluting fossil fuels) inhibiting their access to protected coastal regions. Moreover, conventional vessels have high hydrodynamic resistance (limiting the autonomy) producing high levels of noise that can dramatically influence the monitoring equipment shipped: beside the environmental impact reduction, there is also the necessity of low-resistance/low-noise hydrodynamic specification. Consequently, the coastal monitoring (of also protected regions) needs unconventional vessels able to address both the issues related to the environmental impact and the hydrodynamic performance. In this framework, this work aims to characterize the hydrodynamic performance of a system based on USV units able to launch and recover autonomous vehicles of different nature (gliders, AUVs, motor-gliders, wire-guided ROVs), and able to acquire environmental data (in the column water from free-surface to the sea floor), in order to meet the requirements of civil and military applications. The cutting-edge aspects that characterize the USV studied are the hull SWATH type (Small Waterplane Area Twin Hulls) non-conventional, optimized so as to ensure a unique seakeeping and a reduced resistance, along with the propulsion system with propellers in mantle, developed to combine propulsive efficiency and low noise. In the present paper, a SWATH-shaped USV designed for monitoring of protected coastal regions is numerically studied solving the Navier-Stokes equations on the fully appended vessels with several environmental conditions. An accurate hydrodynamic characterization will presented in order to investigate its performances and eventual maneuverability issues.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/CNR-INSEAN/1-s2.0-S2352146516301223-main.pdf:pdf},
+	keywords     = {CFD,Intereference Factor,SWATH,UAV}
+}
+@article{Zaghi2015,
+	title        = {{RANS Hydrodynamic Characterization of a USV SWATH Configuration Including Design Optimization}},
+	author       = {Zaghi, Stefano and Leotardi, Cecilia and Muscari, Roberto and Dubbioso, Giulio and Diez, Matteo and Broglia, Riccardo},
+	year         = 2015,
+	journal      = {18th Numerical Towing Tank Symposium, NuTTS 2015},
+	pages        = 6,
+	isbn         = {978-88-7617-037-9},
+	abstract     = {Il \emph{NuTTS} {\'{e}} una conferenza annuale (peer-review) che si tiene a partire dal 1998. L'obiettivo principale della conferenza {\'{e}} realizzare un forum di esperti nel campo dell'idrodinamica navale con particolare riguardo alla formazione dei giovani ricercatori.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/CNR-INSEAN/2015-NuTTS-Zaghi_etal-with-cover-page-v2.pdf:pdf}
+}
+@article{Pellegrini2016,
+	title        = {{Multi-Fidelity Adaptive Metamodel for Ship Hull Performance via CFD}},
+	author       = {Pellegrini, Riccardo and Leotardi, Cecilia and Zaghi, Stefano and Broglia, Riccardo and Campana, Emilio and Iemma, Umberto and Diez, Matteo},
+	year         = 2016,
+	number       = {October},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/CNR-INSEAN/2016-NuTTS-Pellegrini_etal.pdf:pdf}
+}
+@article{Piazzola2022,
+	title        = {{Comparing multi-index stochastic collocation and multi-fidelity stochastic radial basis functions for forward uncertainty quantification of ship resistance}},
+	author       = {Piazzola, Chiara and Tamellini, Lorenzo and Pellegrini, Riccardo and Broglia, Riccardo and Serani, Andrea and Diez, Matteo},
+	year         = 2022,
+	journal      = {Engineering with Computers},
+	doi          = {10.1007/s00366-021-01588-0},
+	issn         = 14355663,
+	abstract     = {This paper presents a comparison of two multi-fidelity methods for the forward uncertainty quantification of a naval engineering problem. Specifically, we consider the problem of quantifying the uncertainty of the hydrodynamic resistance of a roll-on/roll-off passenger ferry advancing in calm water and subject to two operational uncertainties (ship speed and payload). The first four statistical moments (mean, variance, skewness, and kurtosis), and the probability density function for such quantity of interest (QoI) are computed with two multi-fidelity methods, i.e., the Multi-Index Stochastic Collocation (MISC) and an adaptive multi-fidelity Stochastic Radial Basis Functions (SRBF). The QoI is evaluated via computational fluid dynamics simulations, which are performed with the in-house unsteady Reynolds-Averaged Navier–Stokes (RANS) multi-grid solver $\chi$navis. The different fidelities employed by both methods are obtained by stopping the RANS solver at different grid levels of the multi-grid cycle. The performance of both methods are presented and discussed: in a nutshell, the findings suggest that, at least for the current implementation of both methods, MISC could be preferred whenever a limited computational budget is available, whereas for a larger computational budget SRBF seems to be preferable, thanks to its robustness to the numerical noise in the evaluations of the QoI.},
+	archiveprefix = {arXiv},
+	arxivid      = {2106.00591},
+	eprint       = {2106.00591},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/CNR-INSEAN/2106.00591.pdf:pdf},
+	keywords     = {Computational fluid dynamics,Finite volumes,Multi-fidelity stochastic radial basis functions,Multi-index stochastic collocation,Reynolds-averaged Navier–Stokes equations,Uncertainty quantification}
+}
+@article{Zaghi2015a,
+	title        = {{Application of dynamic overlapping grids to the simulation of the flow around a fully-appended submarine}},
+	author       = {Zaghi, S. and {Di Mascio}, A. and Broglia, R. and Muscari, R.},
+	year         = 2015,
+	journal      = {Mathematics and Computers in Simulation},
+	publisher    = {Elsevier B.V.},
+	volume       = 116,
+	pages        = {75--88},
+	doi          = {10.1016/j.matcom.2014.11.003},
+	issn         = {03784754},
+	url          = {http://dx.doi.org/10.1016/j.matcom.2014.11.003},
+	abstract     = {The hydrodynamic characterization of control appendages for ship hulls is of paramount importance for the assessment of maneuverability characteristics. However, the accurate numerical simulation of turbulent flow around a fully appended maneuvering vessel is a challenging task, because of the geometrical complexity of the appendages and of the complications connected to their movement during the computation. In addition, the accurate description of the flow within the boundary layer is important in order to estimate correctly the forces acting on each portion of the hull. To this aim, the use of overlapping multi-block body fitted grids can be very useful to obtain both a proper description of each particular region in the computational domain and an accurate prediction of the boundary layer, retaining, at the same time, a good mesh quality. Moreover, block-structured grids with partial overlapping can be fruitfully exploited to control grid spacing close to solid walls, without propagation of undesired clustering of grid cells in the interior of the domain. This approach proved to be also very useful in reducing grid generation time. In the present paper, some details of the flow simulation around a fully appended submarine is reported, with emphasis on the issues related to the complexities of the geometry to be used in the simulations and to the need to move the appendages in order to change the configuration of the various appendages.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/CNR-INSEAN/Application-of-dynamic-overlapping-grids-to-the-sim_2015_Mathematics-and-Com.pdf:pdf},
+	keywords     = {CFD,Dynamic overlapping grids,Fully-appended ship,Maneuvering submarine}
+}
+@article{Zhang2019,
+	title        = {{Numerical simulation study on the effects of course keeping on the roll stability of submarine emergency rising}},
+	author       = {Zhang, Shudi and Li, Hongwei and Zhang, Tiedong and Pang, Yongjie and Chen, Qinglong},
+	year         = 2019,
+	journal      = {Applied Sciences (Switzerland)},
+	volume       = 9,
+	number       = 16,
+	doi          = {10.3390/app9163285},
+	issn         = 20763417,
+	abstract     = {A direct numerical simulation method based on Reynolds Average Navier-Stokes (RANS) equations is used to carry out numerical prediction studies of submarine emergency rising in this paper. Firstly, a numerical simulation of the nonpropelled model without rudder manipulating is accomplished as the basis of this study. The numerical prediction results are in good agreement with the experimental data, which proves the feasibility and accuracy of the direct numerical simulation method. Meanwhile, both model tests and numerical simulation results reveal the strong coupling effect between roll and yaw motions during the underwater ascending process. Based on the above observation and analysis, another two numerical simulations, whose grids are identical with the non-manipulation simulation, are conducted respectively under the condition of rudder steering, i.e., course keeping simulation and self-propulsion simulation. An optimized S surface controller based on conditional determination is designed to manipulate the rudders. As a result, the yaw angle of the latter two simulations is limited within the range of 0.2° and 0.8° respectively, proving the effectiveness of the S surface controller. Correspondingly, the maximum roll angle is reduced by 96% and 70% respectively, which demonstrates that the roll stability is significantly enhanced by improving the course keeping ability of the model. Moreover, it is also proven from the perspective of reverse verification that, the excessive yaw deviation is the root cause of emergency rising roll instability for the situation of incidence angle lower than 30°.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/CNR-INSEAN/applsci-09-03285-v2.pdf:pdf},
+	keywords     = {Course keeping,Numerical simulation,Roll stability,Self-propulsion simulation,Submarine emergency rising}
+}
+@article{Broglia2019,
+	title        = {{Assessment of Computational Fluid Dynamics Capabilities for the Prediction of Three-Dimensional Separated Flows: The Delft 372 Catamaran in Static Drift Conditions}},
+	author       = {Broglia, R. and Zaghi, S. and Campana, E. F. and Dogan, T. and Sadat-Hosseini, H. and Stern, F. and Queutey, P. and Visonneau, M. and Milanov, E.},
+	year         = 2019,
+	journal      = {Journal of Fluids Engineering, Transactions of the ASME},
+	volume       = 141,
+	number       = 9,
+	doi          = {10.1115/1.4042752},
+	issn         = {1528901X},
+	abstract     = {In this paper, capabilities of state-of-the-art computational fluid dynamics (CFD) tools in the prediction of the flow-field around a multihull catamaran advancing in straight ahead motion at nonzero drift angles are investigated. CFD estimations have been provided by three research institutes by using their in-house codes: CNR-INM using Xnavis, IIHR using CFDShip-Iowa, and CNRS/ECN using ISIS. These allowed an in-depth comparison between different methodologies, such as structured overlapping grids versus unstructured grid, different turbulence models and detached eddy simulations (DES) approaches, and level-set (LS) versus volume of fluid (VoF). The activities were pursued within the NATO AVT-183 group "reliable prediction of separated flow onset and progression for air and sea vehicles," aimed at the assessment of CFD predictions of large three-dimensional separated flows. Comparison between estimations is provided for both integral and local quantities, and for wave-induced vortices. Validation is reported by comparison against the available experimental fluid dynamics (EFD) data. Generally, all the simulations are able to capture the main features of the flow field; grid resolution effects are dominant in the onset phase of coherent structures and turbulence model affects the dynamic of the vortices. Hydrodynamic loads are in agreement between the submissions with standard deviation of about 3.5% for the resistance prediction and about 7% for lateral force and yaw moment estimation. Wave-induced vortices are correctly captured by both LS and VoF approaches, even if some differences have been highlighted, LS showing well-defined and long life vortices.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/CNR-INSEAN/fe14109.pdf:pdf}
+}
+@article{Broglia2014,
+	title        = {{Enabling hydrodynamics solver for efficient parallel simulations}},
+	author       = {Broglia, Riccardo and Zaghi, Stefano and Muscari, Roberto and Salvadore, Francesco},
+	year         = 2014,
+	journal      = {Proceedings of the 2014 International Conference on High Performance Computing and Simulation, HPCS 2014},
+	number       = 1,
+	pages        = {803--810},
+	doi          = {10.1109/HPCSim.2014.6903770},
+	isbn         = 9781479953127,
+	abstract     = {In this paper we present the parallel solver $\chi$navis, a general purpose solver for Computational Fluid Dynamics (CFD). The solver is based on the finite volume discretization of the unsteady incompressible Navier-Stokes equations; main features include a level set approach to handle free surface flows and a dynamical overlapping grids approach, which allows to deal with bodies in relative motion. The baseline code features a hybrid MPI/OpenMP parallelization, proven to scale when running on order of hundreds of cores (i.e. Tier-1 platforms). This paper deals with latest developments aimed to extend the capabilities of the $\chi$navis software to exploit modern parallel architectures. Scalability properties will be demonstrated for different cases. As example of application, the computation of the flow fields around a submarine in prescribed oscillatory motion and a surface flow around a catamaran in steady drift advancement are presented.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/CNR-INSEAN/hpcsim.2014.6903770.pdf:pdf}
+}
+@article{Bettle2014,
+	title        = {{Using reduced hydrodynamic models to accelerate the predictor-corrector convergence of implicit 6-DOF URANS submarine manoeuvring simulations}},
+	author       = {Bettle, Mark C. and Gerber, Andrew G. and Watt, George D.},
+	year         = 2014,
+	journal      = {Computers and Fluids},
+	publisher    = {Elsevier Ltd},
+	volume       = 102,
+	pages        = {215--236},
+	doi          = {10.1016/j.compfluid.2014.02.023},
+	issn         = {00457930},
+	url          = {http://dx.doi.org/10.1016/j.compfluid.2014.02.023},
+	abstract     = {An implicit predictor-corrector method is presented for the simultaneous integration of the six degrees-of-freedom (DOF) equations of motion for a manoeuvring submarine and the unsteady Reynolds-Averaged Navier Stokes (URANS) equations describing the vehicle hydrodynamics. The novel method uses coefficient-based hydrodynamic models for estimating the Jacobian matrix for Newton iteration. The method is applied to emergency rising and horizontal plane zig-zag manoeuvres. It is shown to converge faster at each timestep than under-relaxed fixed-point iteration with an optimum relaxation parameter. A simple model containing only primary linear hydrodynamic coefficients that are relatively easy to estimate or measure was found to be adequate for modelling the Jacobian matrix in these simulations. {\textcopyright} 2014 Her Majesty the Queen in Right of Canada, as represented by the Minister of National Defence, 2014.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/CNR-INSEAN/j.compfluid.2014.02.023.pdf:pdf},
+	keywords     = {Coefficient-based hydrodynamic models,Manoeuvring,Predictor-corrector method,Simulation,Six DOF,Submarine,URANS}
+}
+@article{Zaghi2011,
+	title        = {{Analysis of the interference effects for high-speed catamarans by model tests and numerical simulations}},
+	author       = {Zaghi, Stefano and Broglia, Riccardo and {Di Mascio}, Andrea},
+	year         = 2011,
+	journal      = {Ocean Engineering},
+	volume       = 38,
+	number       = {17-18},
+	pages        = {2110--2122},
+	doi          = {10.1016/j.oceaneng.2011.09.037},
+	issn         = {00298018},
+	abstract     = {This paper presents the results of a large experimental and numerical campaign aimed to the analysis of the interference effect for a fast catamaran. Several separation distances are considered; data for resistance, sinkage and trim are collected by towing tank experiments for Froude number ranging from 0.2 to 0.8. Monohull tests are also carried out, the analysis of the interference and its dependency on the separation length being the main objective of the paper. Resistance coefficient curves reveal the presence of two humps, the second one strongly depending on the separation length; high interference is observed in correspondence of the second hump. It is found that the narrower is the configuration, the higher is the interference and the speed at which this maximum occurs. To gain a deeper insight into these behaviors, a complementary analysis, in terms of wave field, surface pressure and velocity field is carried out by an in-house unsteady RANS solver. Verification of numerical results is provided, together with validation, which is made by the comparison with both present and other experimental data. Agreement in terms of resistance coefficient is rather good, comparison error being always smaller than 2.2%. {\textcopyright} 2011 Elsevier Ltd. All rights reserved.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/CNR-INSEAN/j.oceaneng.2011.09.03720161102-26287-9nafv3-with-cover-page-v2.pdf:pdf},
+	keywords     = {CFD,Catamaran,Interference effect,RANS,Towing tests}
+}
+@article{Dubbioso2017,
+	title        = {{CFD analysis of turning abilities of a submarine model}},
+	author       = {Dubbioso, G. and Broglia, R. and Zaghi, S.},
+	year         = 2017,
+	journal      = {Ocean Engineering},
+	publisher    = {Elsevier},
+	volume       = 129,
+	number       = {October},
+	pages        = {459--479},
+	doi          = {10.1016/j.oceaneng.2016.10.046},
+	issn         = {00298018},
+	url          = {http://dx.doi.org/10.1016/j.oceaneng.2016.10.046},
+	abstract     = {A detailed analysis of the maneuvering qualities of a submarine vehicle is carried out by means of a general purpose unsteady RaNSe based CFD solver. In particular, free running maneuvering simulations are performed both at infinite depth and close to the free surface (snorkeling operation) at a reference speed corresponding to Fr=0.21; the analysis is restricted to three degrees of freedom (3DoF) maneuvers in the horizontal plane. The submarine model is equipped with two different control device arrangements, namely a cruciform and a X rudder configuration. The numerical results are presented in a phenomenological style and are partially validated with the experiments for the cruciform rudder configuration. Main finding highlights the superior turning abilities of the X rudder configuration with respect to the cruciform one. Moreover, it has been observed that, for the condition investigated and for both configurations, the stern appendages provide a destabilizing force only in the transient phase, while it acts as a fixed appendage during the steady turning phase. The study focuses also on the effect of grid refinement on both the maneuvering loads and the resulting dynamic response of the model. The analysis revealed that, at least for the present geometry and test, a rather coarse grid (order of millions of grid points) provides a reliable prediction of both the trajectory and kinematic parameters, but a rather inaccurate hydrodynamic loads estimation.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/CNR-INSEAN/j.oceaneng.2016.10.046.pdf:pdf},
+	keywords     = {Appendages,Free Running Simulations,Free surface effects,Overlapping grids}
+}
+@article{Park2013,
+	title        = {{Investigation on the wall function implementation for the prediction of ship resistance}},
+	author       = {Park, Sunho and Park, Se Wan and Rhee, Shin Hyung and Lee, Sang Bong and Choi, Jung Eun and Kang, Seon Hyung},
+	year         = 2013,
+	journal      = {International Journal of Naval Architecture and Ocean Engineering},
+	volume       = 5,
+	number       = 1,
+	pages        = {33--46},
+	doi          = {10.3744/JNAOE.2013.5.1.033},
+	issn         = 20926790,
+	abstract     = {A computational fluid dynamics (CFD) code, dubbed SNUFOAM, was developed to predict the performance of ship resistance using a CFD tool kit with open source libraries. SNUFOAM is based on a pressure-based cellcentered finite volume method and includes a turbulence model with wall functions. The mesh sensitivity, such as the skewness and aspect ratio, was evaluated for the convergence. Two wall functions were tested to solve the turbulent flow around a ship, and the one without the assumption of the equilibrium state between turbulent production and dissipation in the log law layer was selected. The turbulent flow around a ship simulated using SNUFOAM was compared to that by a commercial CFD code, FLUENT. SNUFOAM showed the nearly same results as FLUENT and proved to be an alternative to commercial CFD codes for the prediction of ship resistance performance. {\textcopyright} SNAK, 2013.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/CNR-INSEAN/JNAOE_Park_etal_WallFunction_2013.pdf:pdf},
+	keywords     = {CFD,Open source,SNUFOAM,Ship resistance,Wall function}
+}
+@article{Broglia2015,
+	title        = {{Free running prediction of a fully appended submarine: Effects of stern plane configurations}},
+	author       = {Broglia, R. and Cannarozzo, M. and Dubbioso, G. and Zaghi, S.},
+	year         = 2015,
+	journal      = {MARINE 2015 - Computational Methods in Marine Engineering VI},
+	pages        = {670--681},
+	isbn         = 9788494392863,
+	abstract     = {In this paper numerical computations dedicated to the analysis of the maneuvering behavior of a fully appended submarine are presented. The work presented here is part of the CNR-INSEAN activities scheduled in the framework of a joint Italian and Norwegian MoDs project, with the partnership of MARINTEK, under the egida of the European Defence Agency. The aim of the project is to exploit the effect of cruciform and X rudder configuration on the turning qualities of the submarine in two operation conditions, namely open water and snorkeling depth. In this paper, the free running turning circle maneuver in open water condition is analyzed; predictions are achieved by an in-house CFD solver.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/CNR-INSEAN/Marine-2015-55_FREE RUNNING PREDICTION.pdf:pdf},
+	keywords     = {CFD,Free running,Prediction of trajectory,Submarines}
+}
+@article{DiMascio2009,
+	title        = {{Prediction of hydrodynamic coefficients of ship hulls by high-order Godunov-type methods}},
+	author       = {{Di Mascio}, Andrea and Broglia, Riccardo and Muscari, Roberto},
+	year         = 2009,
+	journal      = {Journal of Marine Science and Technology},
+	volume       = 14,
+	number       = 1,
+	pages        = {19--29},
+	doi          = {10.1007/s00773-008-0021-6},
+	issn         = {09484280},
+	abstract     = {Numerical simulations of incompressible flows, with and without free surface, by means of high-order Godunov-type schemes are presented; the results are compared with the second-order essentially nonoscillatory (ENO) scheme, already implemented and extensively used by the authors for the simulation of flows around ship hulls. Uncertainty assessment and convergence properties are discussed for two practical test cases: the steady and unsteady laminar flow past a NACA 0012 profile with and without incidence, and the steady free surface flow past a ship hull at model Reynolds number. The analysis is aimed to highlight advantages and drawbacks of the numerical schemes considered herein. {\textcopyright} 2008 JASNAOE.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/CNR-INSEAN/s00773-008-0021-6.pdf:pdf},
+	keywords     = {Godunov schemes,High-order schemes,Naval hydrodynamics}
+}
+@article{Broglia,
+	title        = {{Enabling $\chi$ navis CFD Solver for Massively Parallel Simulations}},
+	author       = {Broglia, Riccardo and Zaghi, Stefano and Muscari, Roberto and Salvadore, Francesco and Ko, Soon-heum},
+	pages        = {1--17},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/CNR-INSEAN/WP121.pdf:pdf}
+}
+@article{Lungu2019,
+	title        = {{DES-based computation of the flow around the DARPA suboff}},
+	author       = {Lungu, A.},
+	year         = 2019,
+	journal      = {IOP Conference Series: Materials Science and Engineering},
+	volume       = 591,
+	number       = 1,
+	doi          = {10.1088/1757-899X/591/1/012053},
+	issn         = {1757899X},
+	abstract     = {Flow modelling is a key issue not only for the correct prediction of hull-propeller interactions, manoeuvring characteristics and the flow field in the stern region of any marine vehicle, but also for the correct estimation of the fuel consumption. The paper describes a thorough investigation of the hydrodynamic performances of the DARPA suboff hull. The flow is numerically simulated by integrating in time the unsteady Navier-Stokes equations in which closure to the turbulence is achieved by means of a modified detached eddy simulation (DES hereafter) technique. The solver used for the purpose is the ISIS-CFD, part of the Numeca FineTM/Marine suite, which employs the finite volume of fluid technique. A comparative analysis between the numerical solutions based on the DES and explicit algebraic stress model (EASM hereafter) are provided in an attempt to sustain the choice for the turbulence model in the present study. Extensive parallel computations are carried out on 120 processors for which comparisons with the experimental data prove the accuracy of the chosen investigation methodology. A grid convergence test is performed for verification and validation purposes.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/DES-based_computation_of_the_flow_around_the_DARPA.pdf:pdf}
+}
+@article{Franck2010,
+	title        = {{Compressible large-eddy simulation of separation control on a wall-mounted hump}},
+	author       = {Franck, Jennifer A. and Colonius, Tim},
+	year         = 2010,
+	journal      = {AIAA Journal},
+	volume       = 48,
+	number       = 6,
+	pages        = {1098--1107},
+	doi          = {10.2514/1.44756},
+	issn         = {00011452},
+	abstract     = {Compressible large-eddy simulations of turbulent flow over a wall-mounted hump with active flow control are performed and compared with previous experiments. The flow is characterized by the unsteady separation before the steep trailing edge, which naturally reattaches downstream of the hump to form an unsteady turbulent separation bubble. The low Mach number large-eddy simulation demonstrated a good prediction of surface pressure coefficient, separation-bubble length, and velocity profiles compared with experiments. The effect of compressibility on the baseline flow is documented and analyzed and is found to increase the separation-bubble size, due to a reduced growth rate. Control is applied just before the natural separation point via steady suction and zero-net-mass-flux oscillatory forcing, and steady suction is shown to be more effective in decreasing the size of the separation bubble and pressure drag for the control parameters investigated. Controlled flow at a compressible subsonic Mach number is applied, and found to be slightly less effective than the same control parameters at low Mach numbers.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/Franck2010p10472Aiaa_J.pdf:pdf}
+}
+@article{Chase2013,
+	title        = {{Submarine propeller computations and application to self-propulsion of DARPA Suboff}},
+	author       = {Chase, Nathan and Carrica, Pablo M.},
+	year         = 2013,
+	journal      = {Ocean Engineering},
+	publisher    = {Elsevier},
+	volume       = 60,
+	pages        = {68--80},
+	doi          = {10.1016/j.oceaneng.2012.12.029},
+	issn         = {00298018},
+	url          = {http://dx.doi.org/10.1016/j.oceaneng.2012.12.029},
+	abstract     = {Simulations of the submarine propeller E1619 using the overset flow solver CFDShip-Iowa V4.5 are presented. Propeller open water curves were obtained for two grids for a wide range of advance coefficients covering high to moderately low loads, and results compared with available experimental data. A verification study was performed for one advance coefficient (J=0.71) on four grids and three time step sizes. The study shows that grid refinement has a weak effect on thrust and torque but very strongly affects the wake. The effect of the turbulence model on the wake was evaluated at J=0.4 comparing results with RANS, DES, DDES and with no turbulence model, showing that RANS overly dissipates the wake and that in the solution with no turbulence model the tip vortices quickly become unphysically unstable. Tip vortex pairing is observed and described for J≤0.71, showing multiple vortices merging for higher loads. The wake velocities are compared against experimental data for J=0.74, showing good agreement. Self-propulsion computations of the DARPA Suboff generic submarine hull fitted with sail, rudders, stern planes and the E1619 propeller were performed in model scale and the resulting propeller performance analyzed. {\textcopyright} 2012 Elsevier Ltd. All rights reserved.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/j.oceaneng.2012.12.029.pdf:pdf},
+	keywords     = {Overset grids,Self-propulsion,Submarine propeller,Vortex pairing}
+}
+@article{P.Kumar2016,
+	title        = {{Towards Large Eddy Simulation of Hull-attached Propeller in Crashback}},
+	author       = {{P. Kumar}, K. Mahesh},
+	year         = 2016,
+	journal      = {Proceedings 31st Symposium on Naval Hydrodynamics, California, USA},
+	number       = {September},
+	pages        = {11--16},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/KUMAR_SNH16_final.pdf:pdf}
+}
+@article{Paciorri2005,
+	title        = {{RANS simulations of a junction flow}},
+	author       = {Paciorri, Renato and Bonfiglioli, Aldo and {Di Mascio}, Andrea and Favini, Bernardo},
+	year         = 2005,
+	journal      = {International Journal of Computational Fluid Dynamics},
+	volume       = 19,
+	number       = 2,
+	pages        = {179--189},
+	doi          = {10.1080/10618560410001729126},
+	issn         = 10618562,
+	abstract     = {The ERCOFTAC junction flow is numerically simulated with both a structured and an unstructured RANS solver for incompressible flows. The structured code adopts a finite volume, cell-centered formulation while the unstructured code uses residual distribution schemes and a vertex centered storage of the unknowns. Two differential eddy viscosity models, based on local quantities, are considered in the computations: the one-equation Spalart- Allmaras model and the two equations k - $\epsilon$ model proposed by Lam and Bremhorst. The grid dependence of the numerical solutions is evaluated by means of a convergence analysis based on computation of the GCI and a code-to-code comparison. The numerical results provided by both turbulence models are compared with the experimental measurements of the pressure and velocity fields.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/PaciorriBonfiglioliDiMascioFavini2005.pdf:pdf},
+	keywords     = {Grid-convergence,Junction flow,Numerical simulations,Turbulence modeling,Turbulent flow}
+}
+@article{Mellor1966,
+	title        = {{Equilibrium turbulent boundary layers}},
+	author       = {Mellor, G. L. and Gibson, D. M.},
+	year         = 1966,
+	journal      = {Journal of Fluid Mechanics},
+	volume       = 24,
+	number       = 2,
+	pages        = {225--253},
+	doi          = {10.1017/S0022112066000612},
+	issn         = 14697645,
+	abstract     = {Empirical information is extracted from constant-pressure flows and, on this basis alone, the equations of motion are solved for flows where the pressure gradient parameter, $\beta$ = $\delta$*(dp/dx)/$\tau$0 is held constant. The experimental defect profiles of Clauser and the near-separating profile of Stratford are predicted quite well. The present work is an extension of the work of Clauser and Townsend in that a particular form for an effective or eddy viscosity is hypothesized. Here, however, a continuous, and analytically precise family of defect profiles are calculated for the entire range, −0{\textperiodcentered}5 ≤ $\beta$ ≤ ∞. The solutions span the whole profile with the exception of the viscous sublayer. A detailed consideration of the viscous sublayer and a comparative examination of various eddy viscosity hypotheses are included in a companion paper. {\textcopyright} 1966, Cambridge University Press. All rights reserved.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/S0022112066000612.pdf:pdf}
+}
+@article{Smits2011,
+	title        = {{High-Reynolds number wall turbulence}},
+	author       = {Smits, Alexander J. and McKeon, Beverley J. and Marusic, Ivan},
+	year         = 2011,
+	journal      = {Annual Review of Fluid Mechanics},
+	volume       = 43,
+	pages        = {353--375},
+	doi          = {10.1146/annurev-fluid-122109-160753},
+	issn         = {00664189},
+	abstract     = {We review wall-bounded turbulent flows, particularly high{\^{a}}€ "Reynolds number, zero-pressure gradient boundary layers, and fully developed pipe and channel flows. It is apparent that the approach to an asymptotically high-Reynolds number state is slow, but at a sufficiently high Reynolds number the log law remains a fundamental part of the mean flow description. With regard to the coherent motions, very-large-scale motions or erstructures exist at all Reynolds numbers, but they become increasingly important with Reynolds number in terms of their energy content and their interaction with the smaller scales near the wall. There is accumulating evidence that certain features are flow specific, such as the constants in the log law and the behavior of the very large scales and their interaction with the large scales (consisting of vortex packets). Moreover, the refined attached-eddy hypothesis continues to provide an important theoretical framework for the structure of wall-bounded turbulent flows. {\textcopyright} 2011 by Annual Reviews. All rights reserved.},
+	file         = {:home/lk/Documents/UoM/Papers/FurtherReferences/Smits_AnnRevFluidMech_2011.pdf:pdf},
+	keywords     = {boundary layers,channel flow,coherent motions,pipe flow,turbulence structure}
+}
+@article{Science2020,
+	title        = {{Using machine-learning to develop a novel selective scale-resolving framework for accurate flow and noise predictions of Naval applications}},
+	author       = {Science, Marine Corps and Sandberg, Richard},
+	year         = 2020,
+	number       = {March},
+	pages        = {1--10},
+	file         = {:home/lk/Documents/UoM/Papers/FY20_NICOP_Proposal_Sandberg_Feb2020_technical.pdf:pdf}
+}
+@article{Sandberg2022,
+	title        = {{International Journal of Heat and Fluid Flow Machine-learning for turbulence and heat-flux model development : A review of challenges associated with distinct physical phenomena and progress to date}},
+	author       = {Sandberg, Richard D and Zhao, Yaomin},
+	year         = 2022,
+	journal      = {International Journal of Heat and Fluid Flow},
+	publisher    = {Elsevier Inc.},
+	volume       = 95,
+	number       = {April},
+	pages        = 108983,
+	doi          = {10.1016/j.ijheatfluidflow.2022.108983},
+	issn         = {0142-727X},
+	url          = {https://doi.org/10.1016/j.ijheatfluidflow.2022.108983},
+	file         = {:home/lk/Documents/UoM/Papers/IJHFF_2022_Vol95_Sandberg_Zhao_ML_review.pdf:pdf},
+	keywords     = {Turbulent flows,Turbulent heat transfer,RANS,Machine learning,Data-driven methods}
+}
+@article{Xiao2020,
+	title        = {{Flows over periodic hills of parameterized geometries: A dataset for data-driven turbulence modeling from direct simulations}},
+	author       = {Xiao, Heng and Wu, Jin Long and Laizet, Sylvain and Duan, Lian},
+	year         = 2020,
+	journal      = {Computers and Fluids},
+	publisher    = {Elsevier Ltd},
+	volume       = 200,
+	pages        = 104431,
+	doi          = {10.1016/j.compfluid.2020.104431},
+	issn         = {00457930},
+	url          = {https://doi.org/10.1016/j.compfluid.2020.104431},
+	abstract     = {Computational fluid dynamics models based on Reynolds-averaged Navier–Stokes equations with turbulence closures still play important roles in engineering design and analysis. However, the development of turbulence models has been stagnant for decades. With recent advances in machine learning, data-driven turbulence models have become attractive alternatives worth further explorations. However, a major obstacle in the development of data-driven turbulence models is the lack of training data. In this work, we survey currently available public turbulent flow databases and conclude that they are inadequate for developing and validating data-driven models. Rather, we need more benchmark data from systematically and continuously varied flow conditions (e.g., Reynolds number and geometry) with maximum coverage in the parameter space for this purpose. To this end, we perform direct numerical simulations of flows over periodic hills with varying slopes, resulting in a family of flows over periodic hills which ranges from incipient to mild and massive separations. We further demonstrate the use of such a dataset by training a machine learning model that predicts Reynolds stress anisotropy based on a set of mean flow features. We expect the generated dataset, along with its design methodology and the example application presented herein, will facilitate development and comparison of future data-driven turbulence models.},
+	archiveprefix = {arXiv},
+	arxivid      = {1910.01264},
+	eprint       = {1910.01264},
+	file         = {:home/lk/Documents/UoM/Papers/j.compfluid.2020.104431.pdf:pdf},
+	keywords     = {Physics-informed machine learning,Separated flows,Turbulence modeling}
+}
+@article{Xiao2019,
+	title        = {{Quantification of model uncertainty in RANS simulations: A review}},
+	author       = {Xiao, Heng and Cinnella, Paola},
+	year         = 2019,
+	journal      = {Progress in Aerospace Sciences},
+	publisher    = {Elsevier Ltd},
+	volume       = 108,
+	number       = {October 2018},
+	pages        = {1--31},
+	doi          = {10.1016/j.paerosci.2018.10.001},
+	issn         = {03760421},
+	url          = {https://doi.org/10.1016/j.paerosci.2018.10.001},
+	abstract     = {In computational fluid dynamics simulations of industrial flows, models based on the Reynolds-averaged Navier–Stokes (RANS) equations are expected to play an important role in decades to come. However, model uncertainties are still a major obstacle for the predictive capability of RANS simulations. This review examines both the parametric and structural uncertainties in turbulence models. We review recent literature on data-free (uncertainty propagation) and data-driven (statistical inference) approaches for quantifying and reducing model uncertainties in RANS simulations. Moreover, the fundamentals of uncertainty propagation and Bayesian inference are introduced in the context of RANS model uncertainty quantification. Finally, the literature on uncertainties in scale-resolving simulations is briefly reviewed with particular emphasis on large eddy simulations.},
+	archiveprefix = {arXiv},
+	arxivid      = {1806.10434},
+	eprint       = {1806.10434},
+	file         = {:home/lk/Documents/UoM/Papers/j.paerosci.2018.10.001.pdf:pdf},
+	keywords     = {Bayesian inference,Machine learning,Model-form uncertainty,Reynolds-averaged Navier–Stokes equations,Turbulence modeling}
+}
+@article{Lav2019,
+	title        = {{A framework to develop data-driven turbulence models for flows with organised unsteadiness}},
+	author       = {Lav, Chitrarth and Sandberg, Richard D. and Philip, Jimmy},
+	year         = 2019,
+	journal      = {Journal of Computational Physics},
+	publisher    = {Elsevier Inc.},
+	volume       = 383,
+	pages        = {148--165},
+	doi          = {10.1016/j.jcp.2019.01.022},
+	issn         = 10902716,
+	url          = {https://doi.org/10.1016/j.jcp.2019.01.022},
+	abstract     = {Turbulence modelling development has received a boost in recent years through assimilation of machine learning methods and increasing availability of high-fidelity datasets. This paper presents an approach that develops turbulence models for flows exhibiting organised unsteadiness. The novel framework consists of three parts. First, using triple decomposition, the high-fidelity data is split into organised motion and stochastic turbulence. A data-driven approach is then used to develop a closure only for the stochastic part of turbulence. Finally, unsteady calculations are conducted, which resolve the organised structures and model the unresolved turbulence using the developed bespoke turbulence closure. A case study of a wake with vortex shedding behind a normal flat plate, at a Reynolds number of 2,000, based on plate height and freestream velocity, is considered to demonstrate the method. The approach shows significant improvement in mean velocity and Reynold stress profiles compared with standard turbulence models.},
+	file         = {:home/lk/Documents/UoM/Papers/JCP_2019_Vol383_pp148_165_Lav_et_al.pdf:pdf},
+	keywords     = {DNS,Machine learning,PANS,Scale resolving simulation,Turbulence closure,URANS}
+}
+@techreport{slotnick2014cfd,
+	title        = {{CFD vision 2030 study: a path to revolutionary computational aerosciences}},
+	author       = {Slotnick, Jeffrey P and Khodadoust, Abdollah and Alonso, Juan and Darmofal, David and Gropp, William and Lurie, Elizabeth and Mavriplis, Dimitri J},
+	year         = 2014,
+	booktitle    = {Nnasa/Cr-2014-218178},
+	number       = {March},
+	abstract     = {This report documents the results of a study to address the long range, strategic planning required by NASA's Revolutionary Computational Aerosciences (RCA) program in the area of computational fluid dynamics (CFD), including future software and hardware requirements for High Performance Computing (HPC).},
+	file         = {:home/lk/Documents/UoM/Papers/20140003093.pdf:pdf}
+}
+
+@book{giordani2020introduction,
+  title={An introduction to clustering with R},
+  author={Giordani, Paolo and Ferraro, Maria Brigida and Martella, Francesca},
+  year={2020},
+  publisher={Springer}
+}
+
+@book{bouveyron2019model,
+  title={Model-based clustering and classification for data science: with applications in R},
+  author={Bouveyron, Charles and Celeux, Gilles and Murphy, T Brendan and Raftery, Adrian E},
+  volume={50},
+  year={2019},
+  publisher={Cambridge University Press}
+}
+
+@article{team2013r,
+  title={R: A language and environment for statistical computing},
+  author={Team, R Core and others},
+  year={2013}
+}
+
+@article{van2008visualizing,
+  title={Visualizing data using t-SNE.},
+  author={Van der Maaten, Laurens and Hinton, Geoffrey},
+  journal={Journal of machine learning research},
+  volume={9},
+  number={11},
+  year={2008}
+}
+
+@article{pedregosa2011scikit,
+  title={Scikit-learn: Machine learning in Python},
+  author={Pedregosa, Fabian and Varoquaux, Ga{\"e}l and Gramfort, Alexandre and Michel, Vincent and Thirion, Bertrand and Grisel, Olivier and Blondel, Mathieu and Prettenhofer, Peter and Weiss, Ron and Dubourg, Vincent and others},
+  journal={the Journal of machine Learning research},
+  volume={12},
+  pages={2825--2830},
+  year={2011},
+  publisher={JMLR. org}
+}
+
+}@article{hamilton2022unsupervised,
+  title={Unsupervised Semantic Segmentation by Distilling Feature Correspondences},
+  author={Hamilton, Mark and Zhang, Zhoutong and Hariharan, Bharath and Snavely, Noah and Freeman, William T},
+  journal={arXiv preprint arXiv:2203.08414},
+  year={2022}
+}
+
+@inproceedings{van2021unsupervised,
+  title={Unsupervised semantic segmentation by contrasting object mask proposals},
+  author={Van Gansbeke, Wouter and Vandenhende, Simon and Georgoulis, Stamatios and Van Gool, Luc},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={10052--10062},
+  year={2021}
+}
+
+@article{hafiz2020survey,
+  title={A survey on instance segmentation: state of the art},
+  author={Hafiz, Abdul Mueed and Bhat, Ghulam Mohiuddin},
+  journal={International journal of multimedia information retrieval},
+  volume={9},
+  number={3},
+  pages={171--189},
+  year={2020},
+  publisher={Springer}
+}
+
+@book{skiadas2019data,
+  title={Data analysis and applications 1: Clustering and regression, modeling-estimating, forecasting and data mining},
+  author={Skiadas, Christos H and Bozeman, James R},
+  year={2019},
+  publisher={John Wiley \& Sons}
+}
+
+@article{bussov2021segmentation,
+  title={Segmentation of turbulent computational fluid dynamics simulations with unsupervised ensemble learning},
+  author={Bussov, Maarja and N{\"a}ttil{\"a}, Joonas},
+  journal={Signal Processing: Image Communication},
+  volume={99},
+  pages={116450},
+  year={2021},
+  publisher={Elsevier}
+}
+
+@inproceedings{ji2019invariant,
+  title={Invariant information clustering for unsupervised image classification and segmentation},
+  author={Ji, Xu and Henriques, Joao F and Vedaldi, Andrea},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={9865--9874},
+  year={2019}
+}
+
+@inproceedings{caron2018deep,
+  title={Deep clustering for unsupervised learning of visual features},
+  author={Caron, Mathilde and Bojanowski, Piotr and Joulin, Armand and Douze, Matthijs},
+  booktitle={Proceedings of the European conference on computer vision (ECCV)},
+  pages={132--149},
+  year={2018}
+}
+
+@article{kaiser2014cluster,
+  title={Cluster-based reduced-order modelling of a mixing layer},
+  author={Kaiser, Eurika and Noack, Bernd R and Cordier, Laurent and Spohn, Andreas and Segond, Marc and Abel, Markus and Daviller, Guillaume and {\"O}sth, Jan and Krajnovi{\'c}, Sini{\v{s}}a and Niven, Robert K},
+  journal={Journal of Fluid Mechanics},
+  volume={754},
+  pages={365--414},
+  year={2014},
+  publisher={Cambridge University Press}
+}
+
+@article{guo2020deep,
+  title={Deep learning for 3d point clouds: A survey},
+  author={Guo, Yulan and Wang, Hanyun and Hu, Qingyong and Liu, Hao and Liu, Li and Bennamoun, Mohammed},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  volume={43},
+  number={12},
+  pages={4338--4364},
+  year={2020},
+  publisher={IEEE}
+}
+
+@article{colebank2019influence,
+  title={Influence of image segmentation on one-dimensional fluid dynamics predictions in the mouse pulmonary arteries},
+  author={Colebank, Mitchel J and Paun, L Mihaela and Qureshi, M Umar and Chesler, Naomi and Husmeier, Dirk and Olufsen, Mette S and Fix, Laura Ellwein},
+  journal={Journal of the Royal Society Interface},
+  volume={16},
+  number={159},
+  pages={20190284},
+  year={2019},
+  publisher={The Royal Society}
+}
+
+@article{sun2021automated,
+  title={Automated simulation framework for urban wind environments based on aerial point clouds and deep learning},
+  author={Sun, Chujin and Zhang, Fan and Zhao, Pengju and Zhao, Xinyi and Huang, Yuli and Lu, Xinzheng},
+  journal={Remote Sensing},
+  volume={13},
+  number={12},
+  pages={2383},
+  year={2021},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+
+@inproceedings{tang2016visualizing,
+  title={Visualizing large-scale and high-dimensional data},
+  author={Tang, Jian and Liu, Jingzhou and Zhang, Ming and Mei, Qiaozhu},
+  booktitle={Proceedings of the 25th international conference on world wide web},
+  pages={287--297},
+  year={2016}
+}
+
+@article{xiao2022unsupervised,
+  title={Unsupervised Representation Learning for Point Clouds: A Survey},
+  author={Xiao, Aoran and Huang, Jiaxing and Guan, Dayan and Lu, Shijian},
+  journal={arXiv preprint arXiv:2202.13589},
+  year={2022}
+}
+
+@inproceedings{caron2021emerging,
+  title={Emerging properties in self-supervised vision transformers},
+  author={Caron, Mathilde and Touvron, Hugo and Misra, Ishan and J{\'e}gou, Herv{\'e} and Mairal, Julien and Bojanowski, Piotr and Joulin, Armand},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={9650--9660},
+  year={2021}
+}
+
+@inproceedings{visonneau2022bodies,
+  title={Bodies-of-revolution in turbulent flow: comparing computation with experiment},
+  author={Visonneau, Michel and Guilmineau, Emmanuel and Deng, Ganbo and Ding, Liuyang and Smits, Alexander J},
+  booktitle={AIAA SCITECH 2022 Forum},
+  pages={0694},
+  year={2022}
+}
+
+@article{banerjee2007presentation,
+  title={Presentation of anisotropy properties of turbulence, invariants versus eigenvalue approaches},
+  author={Banerjee, S and Krahl, R and Durst, F and Zenger, Ch},
+  journal={Journal of Turbulence},
+  number={8},
+  pages={N32},
+  year={2007},
+  publisher={Taylor \& Francis}
+}
+
+@article{zhu2022generalization,
+  title={Generalization enhancement of artificial neural network for turbulence closure by feature selection},
+  author={Zhu, Linyang and Zhang, Weiwei and Tu, Guohua},
+  journal={Advances in Aerodynamics},
+  volume={4},
+  number={1},
+  pages={1--24},
+  year={2022},
+  publisher={SpringerOpen}
+}
+
+@article{dy2004feature,
+  title={Feature selection for unsupervised learning},
+  author={Dy, Jennifer G and Brodley, Carla E},
+  journal={Journal of machine learning research},
+  volume={5},
+  number={Aug},
+  pages={845--889},
+  year={2004}
+}
+
+@book{mclachlan2004finite,
+  title={Finite mixture models},
+  author={McLachlan, Geoffrey J and Peel, David},
+  year={2004},
+  publisher={John Wiley \& Sons}
+}
+
+@inproceedings{vassilvitskii2006k,
+  title={k-means++: The advantages of careful seeding},
+  author={Vassilvitskii, Sergei and Arthur, David},
+  booktitle={Proceedings of the eighteenth annual ACM-SIAM symposium on Discrete algorithms},
+  pages={1027--1035},
+  year={2006}
+}
+
+@article{schwarz1978estimating,
+  title={Estimating the dimension of a model},
+  author={Schwarz, Gideon},
+  journal={The annals of statistics},
+  pages={461--464},
+  year={1978},
+  publisher={JSTOR}
+}
+
+@inproceedings{buchner2016local,
+  title={Local topology via the invariants of the velocity gradient tensor within vortex clusters and intense Reynolds stress structures in turbulent channel flow},
+  author={Buchner, Abel-John and Lozano-Dur{\'a}n, Adri{\'a}n and Kitsios, Vassili and Atkinson, Callum and Soria, Julio},
+  booktitle={Journal of Physics: Conference Series},
+  volume={708},
+  number={1},
+  pages={012005},
+  year={2016},
+  organization={IOP Publishing}
+}
+
+@article{tao2002statistical,
+  title={Statistical geometry of subgrid-scale stresses determined from holographic particle image velocimetry measurements},
+  author={Tao, Bo and Katz, Joseph and Meneveau, Charles},
+  journal={Journal of Fluid Mechanics},
+  volume={457},
+  pages={35--78},
+  year={2002},
+  publisher={Cambridge University Press}
+}
+
+@article{pope1975more,
+  title={A more general effective-viscosity hypothesis},
+  author={Pope, SBj},
+  journal={Journal of Fluid Mechanics},
+  volume={72},
+  number={2},
+  pages={331--340},
+  year={1975},
+  publisher={Cambridge University Press}
+}
+
+@article{hall2009weka,
+  title={The WEKA data mining software: an update},
+  author={Hall, Mark and Frank, Eibe and Holmes, Geoffrey and Pfahringer, Bernhard and Reutemann, Peter and Witten, Ian H},
+  journal={ACM SIGKDD explorations newsletter},
+  volume={11},
+  number={1},
+  pages={10--18},
+  year={2009},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{mcconkey2021curated,
+  title={A curated dataset for data-driven turbulence modelling},
+  author={McConkey, Ryley and Yee, Eugene and Lien, Fue-Sang},
+  journal={Scientific data},
+  volume={8},
+  number={1},
+  pages={1--14},
+  year={2021},
+  publisher={Nature Publishing Group}
+}
+
+
+@article{yan2020efficient,
+  title={An efficient unsupervised feature selection procedure through feature clustering},
+  author={Yan, Xuyang and Nazmi, Shabnam and Erol, Berat A and Homaifar, Abdollah and Gebru, Biniam and Tunstel, Edward},
+  journal={Pattern Recognition Letters},
+  volume={131},
+  pages={277--284},
+  year={2020},
+  publisher={Elsevier}
+}
+
+@article{li2017feature,
+  title={Feature selection: A data perspective},
+  author={Li, Jundong and Cheng, Kewei and Wang, Suhang and Morstatter, Fred and Trevino, Robert P and Tang, Jiliang and Liu, Huan},
+  journal={ACM computing surveys (CSUR)},
+  volume={50},
+  number={6},
+  pages={1--45},
+  year={2017},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{roffo2017infinite,
+  title={Infinite latent feature selection: A probabilistic latent graph-based ranking approach},
+  author={Roffo, Giorgio and Melzi, Simone and Castellani, Umberto and Vinciarelli, Alessandro},
+  booktitle={Proceedings of the IEEE international conference on computer vision},
+  pages={1398--1406},
+  year={2017}
+}
+
+@article{keren2022scimed,
+  title={SciMED: A Computational Framework For Physics-Informed Symbolic Regression with Scientist-In-The-Loop},
+  author={Keren, Liron Simon and Liberzon, Alex and Lazebnik, Teddy},
+  journal={arXiv preprint arXiv:2209.06257},
+  year={2022}
+}
+
+@article{shaham2021deep,
+  title={Deep Unsupervised Feature Selection by Discarding Nuisance and Correlated Features},
+  author={Shaham, Uri and Lindenbaum, Ofir and Svirsky, Jonathan and Kluger, Yuval},
+  journal={arXiv preprint arXiv:2110.05306},
+  year={2021}
+}
+
+@article{romanova2022calibration,
+  title={Calibration of the k-$\omega$ SST Turbulence Model for Free Surface Flows on Mountain Slopes Using an Experiment},
+  author={Romanova, Daria and Ivanov, Oleg and Trifonov, Vladimir and Ginzburg, Nika and Korovina, Daria and Ginzburg, Boris and Koltunov, Nikita and Eglit, Margarita and Strijhak, Sergey},
+  journal={Fluids},
+  volume={7},
+  number={3},
+  pages={111},
+  year={2022},
+  publisher={MDPI}
+}
+
+@article{barkalov2022optimization,
+  title={Optimization of Turbulence Model Parameters Using the Global Search Method Combined with Machine Learning},
+  author={Barkalov, Konstantin and Lebedev, Ilya and Usova, Marina and Romanova, Daria and Ryazanov, Daniil and Strijhak, Sergei},
+  journal={Mathematics},
+  volume={10},
+  number={15},
+  pages={2708},
+  year={2022},
+  publisher={MDPI}
+}
+
+@article{fu2019fine,
+  title={Fine Tuning the SST k- $\omega$ Turbulence Model Closure Coefficients for Improved NASCAR Cup Racecar Aerodynamic Predictions},
+  author={Fu, Chen and Bounds, Charles and Uddin, Mesbah and Selent, Christian},
+  journal={SAE International Journal of Advances and Current Practices in Mobility},
+  volume={1},
+  number={2019-01-0641},
+  pages={1226--1232},
+  year={2019}
+}
+
+@article{bounds2020improved,
+  title={Improved CFD prediction of flows past simplified and real-life automotive bodies using modified turbulence model closure coefficients},
+  author={Bounds, Charles Patrick and Zhang, Chunhui and Uddin, Mesbah},
+  journal={Proceedings of the institution of mechanical engineers, part D: journal of automobile engineering},
+  volume={234},
+  number={10-11},
+  pages={2522--2545},
+  year={2020},
+  publisher={SAGE Publications Sage UK: London, England}
+}
+
+@inproceedings{haghiri2020data,
+  title={Data-driven turbulence modelling for improved prediction of ship airwakes},
+  author={Haghiri, Ali and Lav, Chitrarth and Sandberg, Richard D},
+  booktitle={33rd Symposium on Naval Hydrodynamics, Osaka, Japan},
+  volume={31},
+  year={2020}
+}
