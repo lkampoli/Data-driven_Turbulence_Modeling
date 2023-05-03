@@ -36,18 +36,18 @@
 
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
-%%%%%
+
 \usepackage[breakable]{tcolorbox}
 \usepackage{parskip} % Stop auto-indenting (to mimic markdown behaviour)  
 % Maintain compatibility with old templates. Remove in nbconvert 6.0
 \let\Oldincludegraphics\includegraphics
-%
+
 %\DeclareCaptionFormat{nocaption}{}
 %\captionsetup{format=nocaption,aboveskip=0pt,belowskip=0pt}
 \floatplacement{figure}{H} % forces figures to be placed at the correct location
 \usepackage{enumerate} % Needed for markdown enumerations to work
 \usepackage{textcomp} % defines textquotesingle
-%%%%%
+
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -81,9 +81,6 @@
     ([shift={(5pt,+5pt)}]current bounding box.north east);
 }
 
-%\newcites{Cluster}{Clustering}
-%\newcites{AllTheRest}{AllTheRest}
-
 \title{DATA-DRIVEN TURBULENCE MODELING}
 \author{Lorenzo Campoli}
 \date{\today}
@@ -102,16 +99,16 @@
 
 \listoftables
 
-%\section{Abstract}
-%This has been generated from the "Standalone Example" from \url{https://www.overleaf.com/learn/latex/Multi-file_LaTeX_projects}
+\input{Chapt1_Intro/Chapt1_Introduction}
+%\input{Chapt1_Intro/Chapt2}
+%\input{Chapt1_Intro/Chapt3_Clustering}
 
-\newpage
-\import{0/}{main}
+%\newpage
+%\import{0/}{main}
 
-\newpage
-\import{1/}{main}
+%\newpage
+%\import{1/}{main}
 
-%\input{Chapt1_Introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\newpage
 %\input{Chapt2}
