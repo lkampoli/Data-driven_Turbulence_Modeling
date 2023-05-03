@@ -4,3 +4,6 @@
 [submodule "1_first_section"]
 	path = 1_first_section
 	url = git@github.com:zonca/overleaf_largedoc_section_1
+[submodule "Testcases/BOR/BOR"]
+	path = Testcases/BOR/BOR
+	url = https://github.com/lkampoli/BOR
