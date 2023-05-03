@@ -1,9 +1,33 @@
-[submodule "0_introduction"]
-	path = 0_introduction
-	url = git@github.com:zonca/overleaf_largedoc_intro.git
-[submodule "1_first_section"]
-	path = 1_first_section
-	url = git@github.com:zonca/overleaf_largedoc_section_1
-[submodule "Testcases/BOR/BOR"]
-	path = Testcases/BOR/BOR
+[submodule "Testcases/CONVDIV"]
+	path = Testcases/CONVDIV
+	url = https://github.com/lkampoli/CONVDIV
+[submodule "Testcases/BH"]
+	path = Testcases/BH
+	url = https://github.com/lkampoli/BH
+[submodule "Testcases/FAITH"]
+	path = Testcases/FAITH
+	url = https://github.com/lkampoli/FAITH
+[submodule "Testcases/ASBL"]
+	path = Testcases/ASBL
+	url = https://github.com/lkampoli/ASBL
+[submodule "Testcases/CBFS"]
+	path = Testcases/CBFS
+	url = https://github.com/lkampoli/CBFS
+[submodule "Testcases/ATB"]
+	path = Testcases/ATB
+	url = https://github.com/lkampoli/ATB
+[submodule "Testcases/2DWMH"]
+	path = Testcases/2DWMH
+	url = https://github.com/lkampoli/2DWMH
+[submodule "Testcases/2DBFS"]
+	path = Testcases/2DBFS
+	url = https://github.com/lkampoli/2DBFS
+[submodule "Testcases/WMSC"]
+	path = Testcases/WMSC
+	url = https://github.com/lkampoli/WMSC
+[submodule "Testcases/PH"]
+	path = Testcases/PH
+	url = https://github.com/lkampoli/PH
+[submodule "Testcases/BOR"]
+	path = Testcases/BOR
 	url = https://github.com/lkampoli/BOR
