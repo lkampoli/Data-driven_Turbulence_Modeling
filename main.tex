@@ -1,0 +1,139 @@
+\documentclass{article}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[subpreambles=true]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{import}
+\usepackage{hyperref}
+\usepackage[]{multibib}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{rotating}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,positioning,shadows,trees}
+\usetikzlibrary{arrows.meta}
+\usepackage{nomencl}
+\usepackage{amsmath}
+\usepackage{color,soul}
+\usepackage{listings}
+\usepackage{dirtytalk}
+\usepackage{csquotes}
+\usepackage{imakeidx}
+\makeindex[columns=3, title=Alphabetical Index, intoc]
+\usepackage{cancel}
+\usepackage{ulem}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{pdfpages}
+\usepackage{multirow}
+\usepackage{multicol}
+\providecommand{\tabularnewline}{\\}
+\usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+%%%%%
+\usepackage[breakable]{tcolorbox}
+\usepackage{parskip} % Stop auto-indenting (to mimic markdown behaviour)  
+% Maintain compatibility with old templates. Remove in nbconvert 6.0
+\let\Oldincludegraphics\includegraphics
+%
+%\DeclareCaptionFormat{nocaption}{}
+%\captionsetup{format=nocaption,aboveskip=0pt,belowskip=0pt}
+\floatplacement{figure}{H} % forces figures to be placed at the correct location
+\usepackage{enumerate} % Needed for markdown enumerations to work
+\usepackage{textcomp} % defines textquotesingle
+%%%%%
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\newcommand*{\DrawBoundingBox}[1][]{%
+    \draw [red, very thick, #1]
+    ([shift={(-5pt,-5pt)}]current bounding box.south west)
+    rectangle
+    ([shift={(5pt,+5pt)}]current bounding box.north east);
+}
+
+%\newcites{Cluster}{Clustering}
+%\newcites{AllTheRest}{AllTheRest}
+
+\title{DATA-DRIVEN TURBULENCE MODELING}
+\author{Lorenzo Campoli}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\makenomenclature
+\input{nomenclature}
+\printnomenclature[3cm]
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\section{Abstract}
+
+This has been generated from the "Standalone Example" from \url{https://www.overleaf.com/learn/latex/Multi-file_LaTeX_projects}
+
+\newpage
+\import{0/}{main}
+
+\newpage
+\import{1/}{main}
+
+%\input{Chapt1_Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\input{Chapt2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\input{Chapt3_Clustering}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\input{Testcase_Library/BH/Chapt4_BeVERLI}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\input{Testcase_Library/BOR/Chapt5_BOR}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\input{Appendix}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\input{DailyRecord}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\input{UniversalMind}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
